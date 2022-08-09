@@ -35,12 +35,7 @@ public class Base {
 	public static void getURL(String url) {
 		driver.get(url);
 	}
-	public static void click(WebElement element) {
-		element.click();
-	}
-	public static void sendkeys(WebElement element, String input) {
-		element.sendKeys(input);
-	}
+	
 	public static void timeWait() {
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 	}
