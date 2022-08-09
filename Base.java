@@ -24,7 +24,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
 	static WebDriver driver;
+
 	//Please add method for other browsers also
+
 //This method is applicable for only chrome browser
 	public static WebDriver lauchBrowser( String browser) {
 		if (browser.equalsIgnoreCase("chrome")) {
