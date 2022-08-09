@@ -24,13 +24,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
 	static WebDriver driver;
-
+//This method is applicable for only chrome browser
 	public static WebDriver lauchBrowser( String browser) {
 		if (browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
-		}return driver;
+		}
+		return driver;
 	}
 	public static void getURL(String url) {
 		driver.get(url);
